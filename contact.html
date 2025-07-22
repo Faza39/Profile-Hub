@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Profile Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Profile Hub</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="indeks.html">Profiles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-content">
+    <section class="contact-form">
+      <h2>Hubungi Kami</h2>
+      <p>Kirimkan pesan atau pertanyaanmu menggunakan formulir di bawah ini.</p>
+
+      <form action="https://formspree.io/f/mzzgobpy" method="POST">
+        <label for="email">Email Anda:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Pesan Anda:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Tambahan field opsional -->
+        <label for="subject">Subjek:</label>
+        <input type="text" id="subject" name="subject" />
+
+        <input type="hidden" name="_next" value="thanks.html">
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dark Profile Hub. Kami akan segera menghubungi Anda kembali!</p>
+  </footer>
+</body>
+</html>
